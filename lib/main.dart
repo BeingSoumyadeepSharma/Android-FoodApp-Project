@@ -4,7 +4,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import './animated_loadscreen.dart';
 // import './login_window.dart';
 
-void main() => runApp(LoadAnimate());
+void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
   @override
@@ -37,13 +37,14 @@ class _MyAppState extends State<MyApp> {
         body: Column(
           children: <Widget>[
             SearchBar(),
+            LoadAnimate(),
           ],
         ),
         bottomNavigationBar: CurvedNavigationBar(
           height: 55,
           color: Colors.red[700],
           buttonBackgroundColor: Colors.red[900],
-          backgroundColor: Colors.white,
+          backgroundColor: Color.fromRGBO(42, 42, 42, 1),
           items: <Widget>[
             Icon(
               Icons.home,
