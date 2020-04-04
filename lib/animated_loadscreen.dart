@@ -17,6 +17,7 @@ class _LoadAnimateState extends State<LoadAnimate> {
         alignment: Alignment.center,
         fit: BoxFit.contain,
         isPaused: false,
+        animation: 'intro',
       ),
     );
   }
